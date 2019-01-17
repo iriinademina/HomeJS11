@@ -99,6 +99,23 @@ console.log(arr)
 
 var arr1 = sortStrings([555, 5, 78, 45])
 console.log(arr1)
+console.log("---------------------------")
+console.log("Task 4 Сортировка массива чисел через Math")
+console.log("---------------------------")
+
+function sortDigits(arr) {
+            var newArray = []
+
+            while (arr.length > 0) {
+                var z = Math.max.apply(null, arr)
+                newArray.unshift(z)
+                arr.splice(arr.indexOf(z),1)
+        }
+            return newArray;
+    }
+
+console.log (sortDigits([101,5,4,78,89,45]))
+
 
 console.log("---------------------------")
 console.log("Task 5")
