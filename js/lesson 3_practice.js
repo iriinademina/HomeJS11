@@ -72,14 +72,14 @@ function startLesson3_2 () {
           }
   ]
 
+  function getName(userId){
+      for(var x of users){
+          if(x["userId"]!==userId) continue
+          return x["name"]
+    }
+}
   function getCurrentPostComments ( postId ) {
           var res = []
-          function getName(userId){
-            for(var x of users){
-              if(x["userId"]!==userId) continue
-              return x["name"]
-            }
-          }
               for (var comment of comments) {
                  for (var prop in comment) {
                    if (comment[prop] !== postId ) continue
