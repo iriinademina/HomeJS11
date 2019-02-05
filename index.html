@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
   <link rel="stylesheet" href="css/font.css">
   <link rel="stylesheet" href="css/main.css">
   <title>HomeJS</title>
@@ -39,15 +40,37 @@
            <li><a href="#" onclick = "startLesson4_2(event)">Lesson 4.2</a></li>
          </ul>
        </li>
-       <li><a href="">Lesson 5</a></li>
-       <li><a href="">Lesson 6</a></li>
+       <li class="menu_list"><a href=""> <span class ="icon-hand-o-right"></span>Lesson 6 </a>
+         <ul class="drop_menu">
+           <li><a href="#" onclick = "startLesson6_1(event)">Lesson 6.1</a></li>
+           <li><a href="#" onclick = "showBlock(event)">Lesson 6.2</a></li>
+         </ul>
+       </li>
        <li><a href="">Lesson 7</a></li>
        <li><a href="">Lesson 8</a></li>
        <li><a href="">Lesson 9</a></li>
        <li><a href="">Lesson 10</a></li>
+       <li><a href="">Lesson 11</a></li>
      </ul>
    </div>
-
+   <div class="containerLes6">
+       <h1>8 лучших пляжей</h1>
+       <div class="container-content">
+         <h2>Самый красивый</h2>
+         <h3>Пляж Грейс Бей</h3>
+         <p>Остров Провиденсиалес расположен между Кубой и
+             Доминиканской республикой.
+             Здесь находится самый красивый пляж согласно рейтингу Tripadvisor.
+             На побережье Грейс Бей отдыхающим предлагаются шезлонги,
+             зонтики, уютные бунгало или деревянные домики.
+             Туристическая инфраструктура хорошо развита.
+             Хотя сам по себе пляж песчаный, это место нравится дайверам,
+             так как недалеко от берега расположен коралловый риф. А зимой и
+             до середины весны в прибрежных водах отдыхающие могут увидеть
+             горбатых китов.</p>
+        <img src="img/lesson6/beauty beach.jpg" alt="">
+       </div>
+   </div>
    <script src="js/loadHome.js"></script>
    <script src="js/lesson2_practice.js"></script>
    <script src="js/lesson2_home.js"></script>
@@ -56,5 +79,7 @@
    <script src="js/lesson 3_practice.js"></script>
    <script src="js/lesson 4_Bag.js"></script>
    <script src="js/lesson 4_Library.js"></script>
+   <script src="js/lesson 6_1.js"></script>
+   <script src="js/lesson 6_2.js"></script>
 </body>
 </html>
