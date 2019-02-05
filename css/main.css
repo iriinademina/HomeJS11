@@ -7,9 +7,11 @@ body {
 
 .container {
   width: 10%;
-  position: relative;
-  left: -999px;
+  position: fixed;
+  top: 90px;
+  left: -9999px;
   transition: left 0.5s;
+  z-index: 3;
 }
 
 a {
@@ -73,7 +75,6 @@ ul {
   transition: 0.5s;
 }
 
-
 .menu_list:hover .icon-hand-o-right {
   transform: scaleX(-1);
 }
@@ -91,4 +92,23 @@ ul {
   margin-bottom: 15px;
   margin-left: 10px;
   margin-top: 5px;
+  position:fixed;
+  top:20px;
+}
+
+.containerLes6 {
+  margin: 0 auto;
+  max-width:850px;
+  display: none;
+  position: relative;
+  top: 20px;
+}
+
+p,h1,h2,h3 {
+  padding: 10px;
+}
+
+.container-content img {
+  width: 400px;
+  transition: width 1s,transform 2s ease-in-out;
 }
