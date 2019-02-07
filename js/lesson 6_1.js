@@ -2,45 +2,41 @@ function startLesson6_1 (event) {
 
   var tags = [
     {
-      tagName: "div",
-      attrs: {
-         width : 400,
-         height: 400,
-         style :
-              `margin: 0 auto;
-               position: relative;
-               top: 20px;
-               width: 500px;
-               height: 400px;
-               border: 1px solid gray; `
-      },
+        tagName: "div",
+        attrs: {
+            width : 400,
+            height: 400,
+            style :
+                  `margin: 0 auto;
+                   position: relative;
+                   top: 20px;
+                   width: 500px;
+                   height: 400px;
+                   border: 1px solid gray; `
+        },
         children: [
           {
             tagName: "img",
             attrs: {
-            style :
-                `width: 20px;
-                 height: 20px;
-                 position: absolute;
-                 top: -8px;
-                 right: -8px;
-                 border: 1px solid gray;
-                 border-radius: 100%; `,
-            src : "img/lesson6/close.jpg"
-            },
-            callbacks : {
-              click : function (event) {
-                event.target.parentNode.remove()
-              }
-            }
-          },
-          {
-              tagName: "p",
-              attrs: {
-                innerText : "Click me"
-              },
-              callbacks : {
-                click : function (event) {
+                style :
+                    `width: 20px;
+                    height: 20px;
+                    position: absolute;
+                    top: -8px;
+                    right: -8px;
+                    border: 1px solid gray;
+                    border-radius: 100%; `,
+                 src : "img/lesson6/close.jpg",
+                 onclick : function (event) {
+                   event.target.parentNode.remove()
+                 }
+           }
+        },
+    {
+          tagName: "p",
+          attrs: {
+              innerText : "Click me",
+              onclick : function (event) {
                   var pic = event.target.parentNode.appendChild (
                          document.createElement("img"))
                          pic.src="img/lesson6/voda_1.jpg"
@@ -56,11 +52,11 @@ function startLesson6_1 (event) {
                           pic.onclick = function (event) {
                              this.remove()
                            }
+                         event.target [`on${event.type}`] = null
                   }
               }
           }
-
-        ]
+       ]
     }
   ]
 
@@ -70,9 +66,6 @@ function startLesson6_1 (event) {
                 document.createElement(elemData.tagName))
      for(var prop in elemData.attrs){
          elem[prop] = elemData.attrs[prop]
-     }
-     for(var prop in elemData.callbacks){
-        elem.addEventListener(prop , elemData.callbacks[prop])
      }
     if (elemData.children)
          elemData.children.forEach (el =>
