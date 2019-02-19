@@ -1,0 +1,54 @@
+{
+  "users": [
+    {
+      "name": "irina",
+      "email": "irina@gmail.com",
+      "id": 1
+    },
+    {
+      "name": "Elena",
+      "email": "lena24@gmail.com",
+      "id": 2
+    },
+    {
+      "name": "artur",
+      "email": "wer@gmail.com",
+      "id": 4
+    },
+    {
+      "name": "юрий",
+      "email": "ert@gmail.com",
+      "id": 6
+    },
+    {
+      "name": "artur",
+      "email": "art@gmail.com",
+      "id": 8
+    },
+    {
+      "name": "oleg",
+      "email": "oleg@gmail.com",
+      "id": 11
+    },
+    {
+      "name": "alina",
+      "email": "alina@gmail.com",
+      "id": 12
+    },
+    {
+      "name": "aly",
+      "email": "aly@gmail.com",
+      "id": 13
+    },
+    {
+      "name": "sura",
+      "email": "sura@gmail.com",
+      "id": 14
+    },
+    {
+      "name": "юрий",
+      "email": "ur@gmail.com",
+      "id": 15
+    }
+  ]
+}
