@@ -61,9 +61,9 @@ function startLesson12_2 (event) {
 
   let content = [
        ["Австралийский хилер", "img/dog2.jpg"],
-       ["Аляскинский маламут","img/dog2.jpg"],
-       ["Английский бульдог","img/dog3.jpg"],
-       ["Бигль","img/dog4.jpg"]
+       ["Аляскинский маламут","img/dog3.jpg"],
+       ["Английский бульдог","img/dog4.jpg"],
+       ["Бигль","img/dog5.jpg"]
   ]
 
   let result = []
